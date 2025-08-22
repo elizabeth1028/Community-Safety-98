@@ -2,7 +2,7 @@
   "config": {
     "appName_en": "Neighbor Help",
     "appName_es": "Ayuda Vecinal",
-    "ambassadorFormURL": "https://forms.gle/REPLACE_WITH_YOUR_FORM_ID",
+    "ambassadorFormURL": "https://docs.google.com/forms/d/e/1FAIpQLScVCoy9O-3KI1C_lQQt-cxdVbHdewGDQSC4PSSjr7WGwxk-HQ/viewform?usp=sharing&ouid=103584711721130953942",
     "defaultLanguage": "EN"
   },
   "issues": [
