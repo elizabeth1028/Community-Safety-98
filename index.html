@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighbor Help / Ayuda Vecinal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1 id="appTitle">Neighbor Help</h1>
+    <div class="lang-switch">
+      <button id="btnEN" class="lang-btn" aria-pressed="true">EN</button>
+      <button id="btnES" class="lang-btn" aria-pressed="false">ES</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="issues" id="tabIssues">Address an Issue</button>
+    <button class="tab" data-tab="learn" id="tabLearn">Learn</button>
+    <button class="tab" data-tab="code" id="tabCode">Community Code</button>
+    <button class="tab" data-tab="assistant" id="tabAssistant">Assistant</button>
+  </nav>
+
+  <main id="content">
+    <!-- Issues list -->
+    <section id="view-issues" class="view active" aria-label="Issues">
+      <div id="issuesList" class="grid"></div>
+    </section>
+
+    <!-- Issue detail -->
+    <section id="view-detail" class="view" aria-label="Issue Detail">
+      <button class="back" id="backToIssues">←</button>
+      <h2 id="issueTitle"></h2>
+      <p id="safetyBanner" class="banner hidden"></p>
+
+      <div class="card">
+        <h3 id="doTitle">Do</h3>
+        <ul id="doList" class="list"></ul>
+      </div>
+
+      <div class="card">
+        <h3 id="dontTitle">Don't</h3>
+        <ul id="dontList" class="list"></ul>
+      </div>
+
+      <div class="card">
+        <h3 id="sayTitle">Say This</h3>
+        <p id="scriptText"></p>
+        <div class="row">
+          <button id="btnCopy" class="primary">Copy</button>
+          <button id="btnListen" class="secondary">🔊 Listen</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 id="resourcesTitle">Resources</h3>
+        <ul id="resourcesList" class="list"></ul>
+      </div>
+
+      <div class="row">
+        <a id="ambassadorLink" class="primary full" target="_blank" rel="noopener">Ask an Ambassador</a>
+      </div>
+    </section>
+
+    <!-- Learn -->
+    <section id="view-learn" class="view" aria-label="Learn">
+      <div id="learnList" class="grid"></div>
+      <article id="learnDetail" class="card hidden">
+        <button class="back" id="backToLearn">←</button>
+        <h3 id="learnTitle"></h3>
+        <p id="learnBody"></p>
+        <button id="learnListen" class="secondary">🔊 Listen</button>
+      </article>
+    </section>
+
+    <!-- Community Code -->
+    <section id="view-code" class="view" aria-label="Community Code">
+      <div class="card">
+        <h3 id="codeTitle">Community Code</h3>
+        <ul id="codeList" class="list"></ul>
+      </div>
+      <div class="card">
+        <h3 id="hotlinesTitle">Important Hotlines</h3>
+        <ul id="hotlinesList" class="list"></ul>
+      </div>
+    </section>
+
+    <!-- Assistant -->
+    <section id="view-assistant" class="view" aria-label="Assistant">
+      <div class="card">
+        <h3 id="assistantTitle">Describe the problem</h3>
+        <textarea id="assistantInput" rows="4" placeholder="e.g., My neighbor plays loud music at night"></textarea>
+        <div class="row">
+          <button id="assistantGo" class="primary">Get Guidance</button>
+        </div>
+        <p id="assistantNote" class="muted"></p>
+      </div>
+      <div id="assistantResult" class="card hidden"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small id="footerText">Safety first: If someone is in danger, call 911. For mental health crises, call/text 988. For services, call 211. For city services, use 311.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

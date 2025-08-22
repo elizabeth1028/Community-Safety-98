@@ -1,0 +1,427 @@
+{
+  "config": {
+    "appName_en": "Neighbor Help",
+    "appName_es": "Ayuda Vecinal",
+    "ambassadorFormURL": "https://forms.gle/REPLACE_WITH_YOUR_FORM_ID",
+    "defaultLanguage": "EN"
+  },
+  "issues": [
+    {
+      "id": "noise",
+      "icon": "🎵",
+      "name_en": "Noise",
+      "name_es": "Ruido",
+      "highRisk": false
+    },
+    {
+      "id": "animals",
+      "icon": "🐶",
+      "name_en": "Animals",
+      "name_es": "Animales",
+      "highRisk": false
+    },
+    {
+      "id": "parking",
+      "icon": "🚗",
+      "name_en": "Cars & Parking",
+      "name_es": "Autos y Estacionamiento",
+      "highRisk": false
+    },
+    {
+      "id": "odors",
+      "icon": "🗑️",
+      "name_en": "Odors & Trash",
+      "name_es": "Olores y Basura",
+      "highRisk": false
+    },
+    {
+      "id": "property",
+      "icon": "🏡",
+      "name_en": "Property & Yard",
+      "name_es": "Propiedad y Jardín",
+      "highRisk": false
+    },
+    {
+      "id": "dv",
+      "icon": "🛑",
+      "name_en": "Domestic Violence (Safety)",
+      "name_es": "Violencia Doméstica (Seguridad)",
+      "highRisk": true
+    },
+    {
+      "id": "overdose",
+      "icon": "💊",
+      "name_en": "Drugs & Overdose (Safety)",
+      "name_es": "Drogas y Sobredosis (Seguridad)",
+      "highRisk": true
+    },
+    {
+      "id": "crisis",
+      "icon": "🧑‍🤝‍🧑",
+      "name_en": "People in Crisis / Homelessness",
+      "name_es": "Personas en Crisis / Sin Hogar",
+      "highRisk": true
+    }
+  ],
+  "playbooks": {
+    "noise": {
+      "do_en": [
+        "Be friendly; talk in daytime or early evening.",
+        "Use ‘I’ statements about impact.",
+        "Offer an easy fix (earplugs, door sweep)."
+      ],
+      "dont_en": [
+        "Don’t visit when angry or late at night.",
+        "Don’t threaten fines or police."
+      ],
+      "script_en": "Hi, I’m your neighbor on [street]. After 10 pm the bass carries a lot. Could we try a lower volume after 10? I can share what helped me. Thank you.",
+      "resources_en": [
+        "311 noise info",
+        "Community mediation clinic",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Sea amable; hable de día o al atardecer.",
+        "Use frases con “yo” sobre el impacto.",
+        "Ofrezca una solución sencilla (tapones, burlete)."
+      ],
+      "dont_es": [
+        "No vaya molesta/o ni muy tarde.",
+        "No amenace con multas ni policía."
+      ],
+      "script_es": "Hola, soy su vecina de [calle]. Después de las 10 pm el bajo se escucha mucho. ¿Podemos bajar el volumen después de las 10? Puedo compartir lo que me ayudó. Gracias.",
+      "resources_es": [
+        "Información de ruido (311)",
+        "Clínica de mediación comunitaria",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "animals": {
+      "do_en": [
+        "Assume good intent; ask about routines.",
+        "Share tips (leash/gate checks).",
+        "Offer low‑cost vet/microchip info."
+      ],
+      "dont_en": [
+        "Don’t approach an aggressive animal.",
+        "Don’t shame the owner."
+      ],
+      "script_en": "Hi [name], I’ve seen [dog] slip out sometimes. Could we double‑check the gate latch? I can share a low‑cost microchip clinic nearby.",
+      "resources_en": [
+        "Animal control (non‑emergency)",
+        "Low‑cost spay/neuter clinic",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Suponga buena intención; pregunte rutinas.",
+        "Comparta consejos (correa/portón).",
+        "Ofrezca info de veterinario/chip de bajo costo."
+      ],
+      "dont_es": [
+        "No se acerque a un animal agresivo.",
+        "No avergüence a la persona dueña."
+      ],
+      "script_es": "Hola [nombre], he visto que [perro] a veces se sale. ¿Podemos revisar el pestillo del portón? También puedo compartir una clínica de microchip de bajo costo.",
+      "resources_es": [
+        "Control de animales (no emergencia)",
+        "Clínica de esterilización de bajo costo",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "parking": {
+      "do_en": [
+        "Explain impact and times.",
+        "Offer a swap or share open times.",
+        "Use a friendly note template."
+      ],
+      "dont_en": [
+        "Don’t block vehicles.",
+        "Don’t leave angry notes."
+      ],
+      "script_en": "Hi, the spot by [landmark] is resident‑only after 8 pm. If you’re stuck late, text me and I’ll help look for an open spot.",
+      "resources_en": [
+        "Property manager / HOA",
+        "City parking rules",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Explique el impacto y horarios.",
+        "Proponga intercambio o horarios abiertos.",
+        "Use una nota amable."
+      ],
+      "dont_es": [
+        "No bloquee vehículos.",
+        "No deje notas agresivas."
+      ],
+      "script_es": "Hola, el espacio cerca de [referencia] es solo para residentes después de las 8 pm. Si llega tarde, mándeme un texto y le ayudo a buscar lugar.",
+      "resources_es": [
+        "Administración / HOA",
+        "Reglas de estacionamiento de la ciudad",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "odors": {
+      "do_en": [
+        "Start with curiosity; ask what changed.",
+        "Offer sealed‑bag/bin info; pickup reminders.",
+        "Keep it brief and kind."
+      ],
+      "dont_en": [
+        "Don’t accuse or shame.",
+        "Don’t post photos publicly."
+      ],
+      "script_en": "Hi, I might be missing something—trash smells strong near our fence on Wednesdays. Could we try sealed bags and a pickup reminder? Happy to help.",
+      "resources_en": [
+        "311 sanitation",
+        "Bulk pickup info",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Empiece con curiosidad; pregunte cambios.",
+        "Ofrezca bolsas/contenedores; recordatorios de recolección.",
+        "Sea breve y amable."
+      ],
+      "dont_es": [
+        "No acuse ni avergüence.",
+        "No comparta fotos públicamente."
+      ],
+      "script_es": "Hola, quizá me falta contexto—los olores a basura son fuertes los miércoles cerca de la cerca. ¿Podemos usar bolsas selladas y un recordatorio de recolección? Con gusto apoyo.",
+      "resources_es": [
+        "311 saneamiento",
+        "Recolección de voluminosos",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "property": {
+      "do_en": [
+        "Reference HOA/city guidelines neutrally.",
+        "Offer tools/help (bags, mower share).",
+        "Suggest small, doable steps."
+      ],
+      "dont_en": [
+        "Don’t threaten citations.",
+        "Don’t compare to other neighbors."
+      ],
+      "script_en": "Hi, I saw the city reminder about yard upkeep. I have extra lawn bags and a trimmer we can share—would that help this weekend?",
+      "resources_en": [
+        "HOA/city codes",
+        "Tool‑share or lending library",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Mencione reglas de HOA/ciudad con neutralidad.",
+        "Ofrezca ayuda o herramientas.",
+        "Sugiera pasos pequeños y posibles."
+      ],
+      "dont_es": [
+        "No amenace con multas.",
+        "No compare con otras casas."
+      ],
+      "script_es": "Hola, vi el recordatorio de la ciudad sobre el jardín. Tengo bolsas y una desbrozadora para compartir, ¿le sirve este fin de semana?",
+      "resources_es": [
+        "Reglamentos de HOA/ciudad",
+        "Biblioteca de herramientas",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "dv": {
+      "do_en": [
+        "Safety first. Do not confront an abuser.",
+        "If someone is in immediate danger, call 911.",
+        "Offer private support and resources."
+      ],
+      "dont_en": [
+        "Do not mediate between partners.",
+        "Do not share private info."
+      ],
+      "script_en": "If you ever need a safe place to wait or someone to call with you, I’m here. There’s a 24/7 hotline that can help with safety planning. Whatever you choose is okay.",
+      "resources_en": [
+        "National DV Hotline (24/7)",
+        "Local shelter & legal aid",
+        "988 Suicide & Crisis Lifeline"
+      ],
+      "do_es": [
+        "Primero la seguridad. No confronte al agresor.",
+        "Si hay peligro inmediato, llame al 911.",
+        "Ofrezca apoyo privado y recursos."
+      ],
+      "dont_es": [
+        "No medie entre parejas.",
+        "No comparta información privada."
+      ],
+      "script_es": "Si alguna vez necesita un lugar seguro o alguien que llame con usted, aquí estoy. Hay una línea 24/7 que ayuda con planes de seguridad. Lo que decida está bien.",
+      "resources_es": [
+        "Línea Nacional contra la Violencia Doméstica (24/7)",
+        "Refugio local y ayuda legal",
+        "988 Línea de Crisis y Suicidio"
+      ]
+    },
+    "overdose": {
+      "do_en": [
+        "If overdose suspected: call 911.",
+        "If trained and available, give Naloxone and stay.",
+        "Reduce shame; offer info discreetly."
+      ],
+      "dont_en": [
+        "Do not physically intervene in drug activity.",
+        "Do not share identities publicly."
+      ],
+      "script_en": "Checking in—if anyone might be in trouble, there are free Naloxone trainings and test strips nearby. I can share info if helpful.",
+      "resources_en": [
+        "Naloxone trainings (local)",
+        "988 / 211",
+        "Ask an Ambassador"
+      ],
+      "do_es": [
+        "Si sospecha sobredosis: llame al 911.",
+        "Si está capacitada/o y disponible, dé Naloxona y quédese.",
+        "Reduzca la vergüenza; comparta info con discreción."
+      ],
+      "dont_es": [
+        "No intervenga físicamente en actividad de drogas.",
+        "No comparta identidades públicamente."
+      ],
+      "script_es": "Solo para checar. Si alguien pudiera estar en peligro, hay entrenamientos gratuitos de Naloxona y tiras de prueba. Puedo compartir la información si sirve.",
+      "resources_es": [
+        "Entrenamientos de Naloxona (locales)",
+        "988 / 211",
+        "Pedir ayuda a Embajadora/o"
+      ]
+    },
+    "crisis": {
+      "do_en": [
+        "Offer water/food; ask consent to share resources.",
+        "Connect to outreach teams if wanted.",
+        "Respect dignity; keep info private."
+      ],
+      "dont_en": [
+        "Do not force movement.",
+        "Do not call police unless there’s imminent danger."
+      ],
+      "script_en": "Hi—would some water or socks help today? There’s an outreach team on [days]. I can request them if you’d like.",
+      "resources_en": [
+        "Street outreach (local)",
+        "Shelters / day centers",
+        "211 social services"
+      ],
+      "do_es": [
+        "Ofrezca agua/comida; pida permiso para compartir recursos.",
+        "Conecte con equipos de alcance si la persona quiere.",
+        "Respete la dignidad; mantenga privacidad."
+      ],
+      "dont_es": [
+        "No obligue a moverse.",
+        "No llame a la policía salvo peligro inminente."
+      ],
+      "script_es": "Hola—¿le ayudaría agua o calcetines hoy? Hay un equipo de alcance en [días]. Puedo pedirles que vengan si desea.",
+      "resources_es": [
+        "Equipo de alcance (local)",
+        "Refugios / centros diurnos",
+        "211 servicios sociales"
+      ]
+    }
+  },
+  "learn": [
+    {
+      "id": "deescalation",
+      "title_en": "De‑escalation Basics",
+      "body_en": "Stay calm and speak slowly. Keep space between you and the other person. Use open posture and offer choices (“Would you like to talk here or outside?”). Give time and avoid sudden movements. Have an exit plan. If you feel unsafe, leave.",
+      "title_es": "Conceptos básicos de desescalación",
+      "body_es": "Mantenga la calma y hable despacio. Mantenga distancia. Use postura abierta y ofrezca opciones (“¿Prefiere hablar aquí o afuera?”). Dé tiempo y evite movimientos bruscos. Tenga un plan de salida. Si se siente insegura/o, retírese."
+    },
+    {
+      "id": "bystander",
+      "title_en": "Bystander Steps",
+      "body_en": "1) Notice. 2) Interpret the situation. 3) Take responsibility safely. 4) Know what to do. 5) Act without adding harm. Small actions help: a check‑in, a distraction, or asking for help.",
+      "title_es": "Pasos de intervención como testigo",
+      "body_es": "1) Observe. 2) Interprete la situación. 3) Asuma responsabilidad con seguridad. 4) Sepa qué hacer. 5) Actúe sin aumentar el daño. Las acciones pequeñas ayudan: saludar, distraer o pedir ayuda."
+    },
+    {
+      "id": "narcan",
+      "title_en": "Naloxone (Narcan) Basics",
+      "body_en": "Naloxone reverses opioid overdose. Call 911 first. If trained and available, give Naloxone and stay with the person. Learn from local trainings. Naloxone has no effect if opioids are not present.",
+      "title_es": "Conceptos básicos de Naloxona (Narcan)",
+      "body_es": "La naloxona revierte una sobredosis de opioides. Llame al 911 primero. Si está capacitada/o y disponible, adminístrela y quédese con la persona. Capacítese en programas locales. La naloxona no afecta si no hay opioides."
+    },
+    {
+      "id": "when_to_call",
+      "title_en": "When to Call 911 / 988 / 211 / 311",
+      "body_en": "Call 911 for immediate danger or medical emergencies. Call or text 988 for mental health crises. Call 211 for housing, food, or social services. Use 311 for city services like noise or sanitation.",
+      "title_es": "Cuándo llamar al 911 / 988 / 211 / 311",
+      "body_es": "Llame al 911 en peligro inmediato o emergencias médicas. Llame o envíe texto al 988 en crisis de salud mental. Llame al 211 para vivienda, comida o servicios sociales. Use el 311 para servicios de la ciudad como ruido o saneamiento."
+    }
+  ],
+  "keywords": {
+    "noise": [
+      "noise",
+      "music",
+      "loud",
+      "party",
+      "bass",
+      "ruido",
+      "música"
+    ],
+    "animals": [
+      "dog",
+      "dogs",
+      "bark",
+      "barking",
+      "animal",
+      "perro",
+      "perros",
+      "ladrido"
+    ],
+    "parking": [
+      "parking",
+      "car",
+      "cars",
+      "estacionamiento",
+      "auto",
+      "coche"
+    ],
+    "odors": [
+      "odor",
+      "odors",
+      "smell",
+      "trash",
+      "garbage",
+      "basura",
+      "olor"
+    ],
+    "property": [
+      "yard",
+      "grass",
+      "lawn",
+      "weeds",
+      "propiedad",
+      "jardín",
+      "césped"
+    ],
+    "dv": [
+      "violence",
+      "hit",
+      "threaten",
+      "abuse",
+      "violencia",
+      "agresión",
+      "golpear"
+    ],
+    "overdose": [
+      "overdose",
+      "opioid",
+      "fentanyl",
+      "narcan",
+      "sobredosis",
+      "opioides",
+      "naloxona"
+    ],
+    "crisis": [
+      "homeless",
+      "unhoused",
+      "crisis",
+      "person in crisis",
+      "sin hogar",
+      "crisis"
+    ]
+  }
+}
